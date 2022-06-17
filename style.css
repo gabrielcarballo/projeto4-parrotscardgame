@@ -1,26 +1,19 @@
-
-
-body{
+body {
     background-color: #EEF9BF;
     height: 629px;
-    
+
 
 }
 
-.entire-content{
-    
-   
-}
-
-.head{
+.head {
     display: flex;
     justify-content: center;
-    align-items:  flex-end;
+    align-items: flex-end;
     height: 110px;
     position: relative;
 }
 
-.head :nth-child(1){
+.head :nth-child(1) {
     font-family: Roboto;
     font-size: 56px;
     font-weight: 700;
@@ -28,14 +21,13 @@ body{
     letter-spacing: -0.004em;
     color: #75B79E;
     position: absolute;
-    
+
 }
 
-.template-card{
+.template-card {
     background-color: #A7E9AF;
     height: 146px;
     width: 117px;
-    
     border-radius: 5px;
     border: 1px solid #99CEA8;
     display: flex;
@@ -44,47 +36,39 @@ body{
     margin: 0 25px 25px 0;
 }
 
-
-.cards{
-margin-top: 20px;
-
+.cards {
+    margin-top: 20px;
 }
 
-
-.cards ul{
+.cards ul {
     display: flex;
     justify-content: center;
 }
 
-.template-card img{
+.template-card img {
     width: 100px;
     height: 100px;
 }
 
 
-@media (max-width: 335px){
+@media (max-width: 335px) {
 
-    body{
-        
-
-    }
-
-    .head :nth-child(1){
+    .head :nth-child(1) {
         font-size: 36px;
     }
-    
 
-    .head{
+
+    .head {
         text-align: center;
         margin-top: 30px;
     }
-    
-    .template-card{
+
+    .template-card {
         flex-direction: column;
         margin: 0 0 25px 0;
     }
 
-    .cards ul{
+    .cards ul {
         flex-direction: column;
         align-items: center;
     }

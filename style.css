@@ -30,3 +30,34 @@ body{
     position: absolute;
     
 }
+
+.template-card{
+    background-color: #A7E9AF;
+    height: 146px;
+    width: 117px;
+    left: 122px;
+    top: 150px;
+    border-radius: 5px;
+    border: 1px solid #99CEA8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px 25px 0;
+}
+
+
+.cards{
+margin-top: 20px;
+
+}
+
+
+.cards ul{
+    display: flex;
+    justify-content: center;
+}
+
+.template-card img{
+    width: 100px;
+    height: 100px;
+}

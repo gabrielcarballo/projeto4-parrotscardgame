@@ -35,8 +35,7 @@ body{
     background-color: #A7E9AF;
     height: 146px;
     width: 117px;
-    left: 122px;
-    top: 150px;
+    
     border-radius: 5px;
     border: 1px solid #99CEA8;
     display: flex;
@@ -60,4 +59,33 @@ margin-top: 20px;
 .template-card img{
     width: 100px;
     height: 100px;
+}
+
+
+@media (max-width: 335px){
+
+    body{
+        
+
+    }
+
+    .head :nth-child(1){
+        font-size: 36px;
+    }
+    
+
+    .head{
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .template-card{
+        flex-direction: column;
+        margin: 0 0 25px 0;
+    }
+
+    .cards ul{
+        flex-direction: column;
+        align-items: center;
+    }
 }

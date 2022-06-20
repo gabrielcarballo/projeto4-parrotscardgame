@@ -1,5 +1,8 @@
 const cardsNames = ["bobross", "explody", "fiesta", "metal", "revertit", "triplets", "unicorn"];
 let numberOfCards = prompt("Com quantas cartas deseja jogar? Escolha um número par entre 4 e 14");
+let stepsCounter = 0;
+let selected1, selected2;
+
 
 
 
@@ -45,3 +48,37 @@ function sortingCards(numberOfCards){
     }
 }
 sortingCards(numberOfCards);
+
+
+function flipping(card){
+    selected1 = document.querySelector('.temp-turn');
+    card.classList.toggle('temp-turn');
+    if (selected1 !== null && selected1 !== card){
+        selected2 = card
+        compareTest();
+    }
+    stepsCounter ++;
+}
+
+function compareTest(){
+    if (selected1.innerHTML !== selected2.innerHTML){
+        setTimeout(wrongMatch, 1000);
+    } else {
+        selected1.classList.remove('temp-turn');
+        selected2.classList.remove('temp-turn');
+        selected1.classList.add('card-back');
+        selected2.classList.add('card-back');
+        reset();
+    }
+    setTimeout()
+}
+
+function wrongMatch(){
+    selected1.classList.remove('temp-turn');
+    selected2.classList.remove('temp-turn');
+    reset();
+}
+
+function reset() {
+    selected1, selected2 = null;
+}

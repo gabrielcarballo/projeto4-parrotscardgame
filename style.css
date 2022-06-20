@@ -60,6 +60,10 @@ body {
     transform: rotateY(180deg);
 }
 
+.temp-turn{
+    transform: rotateY(180deg);
+}
+
 .selected {
     background-color: red;
 }

@@ -34,6 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 25px 25px 0;
+    transition: all 300ms linear;
 }
 
 .cards {
@@ -43,6 +44,7 @@ body {
 .cards ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .template-card img {
@@ -50,6 +52,9 @@ body {
     height: 100px;
 }
 
+.selected {
+    background-color: red;
+}
 
 @media (max-width: 335px) {
 

@@ -86,6 +86,6 @@ function reset() {
 function whenTheGameEnds(){
     let condition = document.querySelectorAll('li:not(.card-back)');
     if (condition.length === 0){
-        alert(`"Você venceu o jogo em um total de ${stepsCounter} jogadas"`)
+        alert(`"Você venceu o jogo em um total de ${stepsCounter/2} jogadas"`)
     }
 }

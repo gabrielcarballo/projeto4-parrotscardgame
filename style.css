@@ -56,8 +56,8 @@ body {
     position: absolute;
 }
 
-.cardback {
-    transform: rotateY(180);
+.card-back {
+    transform: rotateY(180deg);
 }
 
 .selected {

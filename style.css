@@ -34,7 +34,9 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 25px 25px 0;
-    transition: all 300ms linear;
+    transition: .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 .cards {
@@ -50,6 +52,12 @@ body {
 .template-card img {
     width: 100px;
     height: 100px;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.cardback {
+    transform: rotateY(180);
 }
 
 .selected {

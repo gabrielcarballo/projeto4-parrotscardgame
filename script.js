@@ -1,14 +1,14 @@
 const cardsNames = ["bobross", "explody", "fiesta", "metal", "revertit", "triplets", "unicorn"];
 let numberOfCards = prompt("Com quantas cartas deseja jogar? Escolha um número par entre 4 e 14");
-let isValid;
+
 
 
 
 verifyNumberCards(numberOfCards);
-console.log(numberOfCards)
+
 
 function verifyNumberCards(){
-    numberOfCards = prompt("Com quantas cartas deseja jogar? Escolha um número par entre 4 e 14");
+    
     if (numberOfCards < 4){
         alert ("Deve ser um número maior do que 4");
         verifyNumberCards();
@@ -19,6 +19,29 @@ function verifyNumberCards(){
         alert ("Deve ser um número par!");
         verifyNumberCards();
     }
-    console.log(numberOfCards)
 }
-console.log(numberOfCards)
+
+function shuffleCardsArray(){
+    return Math.random() - 0.5;
+}
+
+function sortingCards(numberOfCards){
+    let sortingArray = [];
+    for (let i = 0; i < numberOfCards/2; i++){
+        sortingArray.push(cardsNames[i]);
+        sortingArray.push(cardsNames[i]);
+    }
+    
+    sortingArray.sort(shuffleCardsArray);
+    for(let sortingAmount = 0; sortingAmount < numberOfCards; sortingAmount++){
+        jsCard = `
+        <li class="template-card" onclick="flipping(this)">
+            <img class="card-front" src="./uteis/front.png">
+            <img class="card-back" src="./uteis/${sortingArray[sortingAmount]}parrot.gif">
+        </li>
+        `
+
+        document.querySelector('ul').innerHTML += jsCard
+    }
+}
+sortingCards(numberOfCards);

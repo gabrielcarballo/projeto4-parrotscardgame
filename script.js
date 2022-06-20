@@ -70,7 +70,7 @@ function compareTest(){
         selected2.classList.add('card-back');
         reset();
     }
-    setTimeout()
+    setTimeout(whenTheGameEnds, 2000)
 }
 
 function wrongMatch(){
@@ -81,4 +81,11 @@ function wrongMatch(){
 
 function reset() {
     selected1, selected2 = null;
+}
+
+function whenTheGameEnds(){
+    let condition = document.querySelectorAll('li:not(.card-back)');
+    if (condition.length === 0){
+        alert(`"Você venceu o jogo em um total de ${stepsCounter} jogadas"`)
+    }
 }
